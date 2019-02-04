@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      >
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </h:head>
+    <h:body>
+
+        <b:navBar brand="Volleyball Klassement" brandHref="#" inverse="true">
+            <b:navbarLinks pull="right">
+                <b:navLink span="10"></b:navLink>
+                <b:navLink value="Home" href="index.xhtml"></b:navLink>
+                <b:navLink value="Link" href="ClubCreate.xhtml"></b:navLink>
+                <b:navLink value="competition" href="Competitions.xhtml"></b:navLink>
+            </b:navbarLinks>
+        </b:navBar>  
+
+        <h1>dit is de pagina player</h1>
+        <ul>
+
+            <li class="list-group-item"><span class="font-weight-bold">First name : </span><h:outputText
+                    value="#{playerController.firstName}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">Last name : </span><h:outputText
+                    value="#{playerController.lastName}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">Birth date : </span><h:outputText
+                    value="#{playerController.dateOfBirth}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">Team id : </span><h:outputText
+                    value="#{playerController.team_id}"/></li>
+
+        </ul>
+
+    </h:body>
+</html>

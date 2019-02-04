@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Title</title>
+    </h:head>
+    <h:body>
+
+        <b:navBar brand="Volleyball Klassement" brandHref="#" inverse="true">
+            <b:navbarLinks pull="right">
+                <b:navLink span="10"></b:navLink>
+                <b:navLink value="Home" href="index.xhtml"></b:navLink>
+                <b:navLink value="Link" href="ClubCreate.xhtml"></b:navLink>
+                <b:navLink value="competition" href="Competitions.xhtml"></b:navLink>
+            </b:navbarLinks>
+        </b:navBar>  
+
+        <b:form style="margin-left: 9.5%">
+            <b:row>
+                <b:column span="4">
+                    <h:outputText value="competitieNaam : "/>
+                    <b:inputText id="competitieNaam" value="#{clubCreateController.competitieNaam}"/>
+                </b:column>
+            </b:row>
+            <b:row>
+                <b:column span="4">
+                    <h:outputText value="regio : "/>
+                    <b:inputText styleClass="form-control" value="#{clubCreateController.regio}"/>
+                </b:column>
+            </b:row>
+            <b:row>
+                <b:column span="4">
+                    <h:outputText value="divisie : "/>
+                    <b:inputText styleClass="form-control" value="#{clubCreateController.divisie}"/>
+                </b:column>
+            </b:row>
+            <b:row>
+                <b:column span="4">
+                    <h:outputText value="club : "/>
+                    <b:inputText styleClass="form-control" value="#{clubCreateController.club}"/>
+                </b:column>
+            </b:row>
+            <b:row>
+                <b:column span="4">
+                    <h:outputText value="teamnaam : "/>
+                    <b:inputText styleClass="form-control" value="#{clubCreateController.teamnaam}"/>
+                </b:column>
+            </b:row>
+            <b:commandButton value="zoeken" look="primary" style="margin-left: 9.5%"></b:commandButton>
+
+        </b:form>
+
+
+    </h:body>
+</html>

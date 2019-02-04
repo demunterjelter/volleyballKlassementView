@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      >
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </h:head>
+    <h:body>
+
+        <b:navBar brand="Volleyball Klassement" brandHref="#" inverse="true">
+            <b:navbarLinks pull="right">
+                <b:navLink span="10"></b:navLink>
+                <b:navLink value="Home" href="index.xhtml"></b:navLink>
+                <b:navLink value="Link" href="ClubCreate.xhtml"></b:navLink>
+                <b:navLink value="competition" href="Competitions.xhtml"></b:navLink>
+            </b:navbarLinks>
+        </b:navBar>  
+
+        <h1 style="margin-left: 3%">competitions</h1>
+        <ul>
+
+            <li class="list-group-item"><span class="font-weight-bold">name : </span><h:outputText
+                    value="#{competitionController.name}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">division : </span><h:outputText
+                    value="#{competitionController.division}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">region : </span><h:outputText
+                    value="#{competitionController.region}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">teams : </span><h:outputText
+                    value="#{competitionController.teamList}"/></li>
+            <li class="list-group-item"><span class="font-weight-bold">games : </span><h:outputText
+                    value="#{competitionController.gameList}"/></li>
+
+        </ul>
+        <b:button value="voeg een competitie toe" look="primary" style="margin-left: 3%"></b:button>
+    </h:body>
+</html>
